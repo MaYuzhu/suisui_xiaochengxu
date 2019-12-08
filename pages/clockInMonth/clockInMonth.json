@@ -1,0 +1,9 @@
+{
+  
+  "navigationBarTitleText": "打卡分析",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "ff-canvas": "@antv/f2-canvas"
+  }
+}

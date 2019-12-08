@@ -1,0 +1,26 @@
+<!--pages/indexBefore/indexBefore.wxml-->
+
+<view class="container bg">
+  <view class='bg_img_view'>
+    <image src="../../images/bg.png" class="bg_image" mode="scaleToFill"></image>
+  </view>
+  
+  <scroll-view scroll-y="true" style="height: 100%;">
+    <view style="text-align: center;">心艺小程序</view>
+    <view class="scroll-y" style="padding:30rpx 0;">
+      <view class='item_content' wx:for-items="{{scrolls}}" wx:key="name">
+        <view class="item" bindtap="gotoPage" id='{{item.id}}'>
+          <view class='item_child1'>{{item.title}}</view>
+          <view class='item_child2'>
+            <view>点击进入</view>
+            <image src="../../images/youjiantou.png" style='width:50rpx;height:50rpx' mode="scaleToFill"></image> 
+          </view>
+        </view>
+        
+      </view>
+    </view>
+    <view class="bottom_text">这是一段测试文字，一些企业信息等等,这是一段测试文字，一些企业信息等等这是一段测试文字，一些企业信息等等这是一段测试文字，一些企业信息等等这是一段测试文字，一些企业信息等等</view>
+  </scroll-view>
+  
+  
+</view>

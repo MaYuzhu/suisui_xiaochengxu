@@ -1,0 +1,16 @@
+<view>
+  <view class="border"></view>
+  <view class="title">表现评价</view>
+  <view class="star">
+    <view class="item" wx:for='{{arr_items}}' wx:key='index'>
+      <view class="option_title">{{item.title}}</view>
+      <view class="xing" wx:for="{{item.my_level}}" wx:key="id">
+        <image class="star-image" style="left:60rpx" src="../../images/full-star.png"></image>
+      </view>
+    </view>
+  </view>
+  <view  class="title">文字描述</view>
+  <view class="text">
+    <text>{{text}}</text>
+  </view>
+</view>

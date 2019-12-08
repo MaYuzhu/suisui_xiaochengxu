@@ -1,0 +1,24 @@
+/* pages/xieyi/xieyi.wxss */
+page{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto !important; 
+    background: #f7f7f9;
+    /* padding: 20rpx; */
+    box-sizing: border-box;
+}
+.xieyi{
+    /* width: 100%; */
+    margin: 30rpx;
+    border: 2rpx solid #eee;
+    background: #fff;
+    border-radius:20rpx; 
+    padding: 30rpx;
+    box-sizing: border-box;
+    color: #666;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

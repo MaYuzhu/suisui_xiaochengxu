@@ -1,0 +1,88 @@
+/* pages/subjectbefore/subjectbefore.wxss */
+page{
+  background: #f5f5f5;
+  min-height: 100%;
+}
+.content{
+  /* height: 1000px; */
+  background: #fff;
+  border: 2rpx solid #eee;
+  border-radius: 20rpx;
+  margin: 30rpx;
+  padding: 50rpx 40rpx;
+}
+.button{
+    height: 80rpx;
+    line-height: 80rpx;
+    background:#facc3e;
+    box-shadow: 0 0 4rpx 14rpx #f7e8bd;
+    color:#fff;
+    border-radius: 50rpx;
+    font-size: 30rpx;
+    margin: 50rpx 30rpx;
+    text-align: center;
+}
+.button::after{
+    border:none; 
+}
+.line_botttom{
+  border-bottom: 2rpx solid #eee;
+  line-height: 70rpx;
+  margin-left:1em;
+  font-size: 34rpx;
+  color:#666;
+}
+radio .wx-radio-input{
+   border-radius: 50%;/* 圆角 */
+   width: 40rpx;
+   height: 40rpx;
+   border: none;
+}
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked{
+   border: none;
+   background:#fff !important;
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before{
+   border-radius: 50%;
+   width: 40rpx; 
+   height: 40rpx; 
+   line-height: 40rpx;
+   text-align: center;
+   font-size:30rpx; /* 对勾大小 30rpx */
+   color:#c2c212; /* 对勾颜色 白色 */
+   background: transparent;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+}
+
+/* 头提示 */
+.container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+   
+}
+.scrolltxt{
+    padding:0 20rpx;
+    background:#fbfcdc;
+}
+.marquee_box {
+    position:relative;
+    color:#e16531;
+    height:60rpx;
+    display:block;
+    overflow:hidden;
+   
+} 
+.marquee_text {
+    white-space: nowrap;
+    position:absolute;
+    top:0;
+    font-size:28rpx;
+    height:60rpx;
+    line-height:60rpx;
+}

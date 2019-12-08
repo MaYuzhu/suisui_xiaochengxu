@@ -1,0 +1,43 @@
+<!--pages/pastItem/pastItem.wxml-->
+<!--pages/objectinfo/objectinfo.wxml-->
+<view class="border"></view>
+<view class='page'>
+  <view class='title_top'>{{theme_description}}</view>
+  <scroll-view scroll-y="false">
+    <view style='margin-bottom:80rpx;'>
+        <view class='title_1'></view>
+        <view class='content1'>
+            <view style='color:#6495ED;'>1. 基础内容</view>
+            <view style='text-indent: 1em; color:#666;font-size:28rpx;'>量表名称</view>
+            <view style='text-indent: 2em; color:#aaa;font-size:24rpx;'>{{theme}}</view>
+            <view style='text-indent: 1em; color:#666;font-size:28rpx;'>答题时间</view>
+            <view style='text-indent: 2em; color:#aaa;font-size:24rpx;'>{{answer_time}}</view>
+            <view style='text-indent: 1em; color:#666;font-size:28rpx;'>评估分数</view>
+            <view style='text-indent: 2em; color:#aaa;font-size:24rpx;'>{{total_score}}分</view>
+            <view style='text-indent: 1em; color:#666;font-size:28rpx;'>测评关系</view>
+            <view style='text-indent: 2em; color:#aaa;font-size:24rpx;'>{{role_title}}</view>
+        </view>
+        <view class='content2'>
+          <view style='color:#6495ED;'>2. 评估试题</view>
+
+          <view wx:for="{{questions}}"  wx:key="index" style='border-bottom: 2rpx solid #aaa;'>
+            <view data-id='{{question_id}}' style='border-bottom: 2rpx solid #fff;line-height:70rpx;font-size:34rpx;color:#999'>单选题：{{item.question.content}}       
+            </view>
+            <radio-group class="radio-group" bindchange="radioChange">
+              <label class="radio_label" style='display:flex;min-height:70rpx;color:#666;font-size:32rpx;' class='line_botttom' wx:for="{{item.question.options}}" wx:for-item="i" wx:key='index'>
+                  <text style='display:inline-block;width:90%;'>{{i.content}}</text>
+                  <radio class="radio_item" disabled='{{true}}' class="{{item.my_option.option_id==i.option_id?'radio_item':'radio'}}" style='float:right;' checked="{{item.my_option.option_id==i.option_id}}">
+                  </radio>
+              </label>
+              
+            </radio-group>
+          </view>
+              
+        </view>
+       
+     
+    </view>
+    
+  </scroll-view>
+  
+</view>

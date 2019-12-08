@@ -1,0 +1,10 @@
+<view class="border"></view>
+
+<view style='display: flex;align-items: center'>
+  <image src="../../images/bianji3.png" style='width:50rpx;height:50rpx;' mode="scaleToFill"></image>
+  <text style='font-size:30rpx;color:#666;'>打卡月报</text>
+</view>
+
+<view class="containerMonth">
+    <ff-canvas id="column-dom" canvas-id="column" opts="{{ opts }}"></ff-canvas>
+</view>

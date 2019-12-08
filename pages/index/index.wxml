@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<view hidden='{{true}}'>
+    <view wx:if="{{canIUse}}" >
+        <view class='header'>
+            心艺教育
+            <!-- <image src='/images/wx_login.png'></image> -->
+        </view>
+ 
+        <view class='content_shou'>
+            <view>申请获取以下权限</view>
+            <text>获得你的公开信息(昵称，头像等)</text>
+        </view>
+ 
+        <button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+            授权登录
+        </button>
+    </view>
+    <view wx:else>请升级微信版本</view>
+</view>
+
+<image src="../../images/clock_top.jpg" class="bg_image" mode="widthFix"></image>
+<view class="bg">
+  
+  <!-- <view class='bg_img_view'>
+    <image src="../../images/bg.png" class="bg_image" mode="scaleToFill"></image>
+    
+  </view> -->
+  <!-- <scroll-view scroll-y="true" style="height: 100%;"> -->
+  <view class="scroll-y">
+    <view class='item_content' wx:for-items="{{scrolls}}" wx:key="name">
+      <view class="item" bindtap="gotoPage" id='{{item.theme_id}}'>
+        <view class='item_child1'>{{item.title}}</view>
+        <!-- <view class='item_child2'>
+          <view>进入主题</view>
+          <image src="../../images/youjiantou.png" style='width:50rpx;height:50rpx' mode="scaleToFill"></image> 
+        </view> -->
+      </view>
+      
+    </view>
+  </view>
+  <!-- </scroll-view> -->
+  
+  
+</view>

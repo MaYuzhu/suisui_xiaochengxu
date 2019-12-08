@@ -1,0 +1,81 @@
+
+<view class="arrow" bindtap="goback" style="top:{{statusBarHeight}}px">
+  <image src="../../images/youhui.png" style='width:80rpx;height:80rpx;'></image>
+</view>
+<view wx:if='{{!isHave}}'  class='no_content'>
+  
+  <view>
+    <image style='width:100rpx;height:100rpx;margin:0 auto;display:block;' src="../../images/yemiankong.png" mode="scaleToFill"></image>
+  </view>
+  <view style='color:#666' >
+    您还没有设置打卡关键字，请联系咨询师...
+  </view> 
+</view>
+
+
+<view wx:else style='padding-bottom: 50rpx;'>
+  <view style="position: relative;">
+    <image src="../../images/yellow_top.jpg" class="bg_image" mode="widthFix" style="width:100%;display:block;"></image>
+    <view class="avatar_wrap">
+      <view>
+        <image src="{{avatar}}" style='width:100rpx;height:100rpx;border-radius:50%;'></image>
+        <text style='color:#666;margin-left:18rpx;font-size:32rpx'>{{uesrname}}</text>
+      </view>
+      <view bindtap='history_search' class="history">查看记录</view> 
+  </view>
+  </view>
+  
+  <!-- <view class="arrow" bindtap="goback" style="top:{{statusBarHeight}}px">
+    <image src="../../images/youhui.png" style='width:80rpx;height:80rpx;'></image>
+  </view> -->
+  
+  <!-- <view class='top'>
+    <view style='display: flex;align-items: center'>
+      <image src="../../images/bianji3.png" style='width:50rpx;height:50rpx;' class="bg_image" mode="scaleToFill"></image>
+      <text style='font-size:30rpx;color:#666;'>表现评价</text>
+    </view>
+    <view bindtap='history_search'>
+      <image src="../../images/gengduo.png" style='width:50rpx;height:50rpx;' class="bg_image" mode="scaleToFill"></image>
+    </view>
+  </view> -->
+  <view class='container'>
+    <view class='evaluate_contant'>
+    <!--外层循环控制有几个评价条目  -->
+      <block wx:for='{{evaluate_contant}}' wx:key='' wx:for-index='idx'>
+        <view class='evaluate_item'>
+          <view class='evaluate_title'>{{item.title}}</view>
+
+          <!--星星评价  -->
+          <view class='evaluate_box'>
+          <!--内层循环展示每个评价条目的星星  -->
+            <block wx:for="{{stars}}" wx:key='index' wx:for-index="option_id_index">
+              <image class="star-image" style="left: {{item*60}}rpx" src="{{scores[idx] > item ?(scores[idx]-item == 0.5?halfSrc:selectedSrc) : normalSrc}}">
+                <!-- <view class="item" style="left:0rpx" data-score="{{item + 0.5}}" data-idx='{{idx}}' bindtap="selectLeft"></view> -->
+                <view class="item" style="left:0rpx" data-score="{{item + 1}}" data-idx='{{idx}}'  data-optionid='{{evaluate_contant[idx].option_id}}' bindtap="selectRight"></view>
+              </image>
+            </block>
+          </view>
+
+        </view>
+      </block>
+      <button style='display:none' class='submit_button' bindtap='submit_evaluate' type='primary'>提交</button>
+    </view>
+  </view>
+  <view style='width:90%;height:4rpx;background:#e0e0e0;margin:0 auto;'></view>
+  <view class='text-title'>
+    <view style='display: flex;align-items: center'>
+      <!-- <image src="../../images/bianji3.png" style='width:50rpx;height:50rpx;' class="bg_image" mode="scaleToFill"></image> -->
+      <text style='font-size:30rpx;color:#666;'>文字描述</text>
+    </view>
+    
+  </view>
+  <textarea class="detailText" maxlength="{{max}}" bindinput="inputs"
+    placeholder="输入您的备注" value="{{summary}}" bindblur="charChange">
+    <text class="currentWordNumber">{{currentWordNumber|0}}/{{max}}</text>
+    
+  </textarea>
+  
+  <button hidden='{{!is_show_button}}' style='background:#facc3e;' class='submit_button' bindtap='submit_evaluate' type='primary'>现 在 打 卡</button>
+  <button hidden='{{is_show_button}}' style='background:#bbb;' class='submit_button_no' type='primary' hover-class="none">现 在 打 卡</button>
+</view>
+

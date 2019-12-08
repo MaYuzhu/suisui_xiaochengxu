@@ -1,0 +1,116 @@
+/* pages/objectinfo/objectinfo.wxss */
+page{
+    width: 100%;
+    height: 100%;
+    background: #f7f7f9;
+}
+.page{
+    background: #f7f7f9;
+    height: 100%;
+    
+}
+.container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+   
+}
+.scrolltxt{
+    padding:0 20rpx;
+    background:#fbfcdc;
+}
+.marquee_box {
+    position:relative;
+    color:#e16531;
+    height:60rpx;
+    display:block;
+    overflow:hidden;
+   
+} 
+.marquee_text {
+    white-space: nowrap;
+    position:absolute;
+    top:0;
+    font-size:28rpx;
+    height:60rpx;
+    line-height:60rpx;
+}
+.title_1{
+    text-align: center;
+    margin: 30rpx;
+}
+.content1,.content2{
+    border: 2rpx solid #eee;
+    background: #fff;
+    border-radius:20rpx;
+    margin: 20rpx; 
+    padding: 30rpx 40rpx;
+}
+.content1>view{
+    margin: 20rpx 0;
+    
+}
+.info_input{
+    border-bottom:2rpx solid #aaa;
+    font-size:28rpx;
+    padding: 20rpx 0;
+}
+.info_radio{
+    border-bottom:2rpx solid #aaa;
+    font-size:28rpx;
+    color:#666;
+}
+.line_botttom{
+    border-bottom: 2rpx solid #eee;
+    line-height: 70rpx;
+    margin-left:1em; 
+}
+radio .wx-radio-input{
+   border-radius: 50%;/* 圆角 */
+   width: 40rpx;
+   height: 40rpx;
+   border: none;
+}
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked{
+   border: none;
+   background:#fff !important;
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before{
+   border-radius: 50%;
+   width: 40rpx; 
+   height: 40rpx; 
+   line-height: 40rpx;
+   text-align: center;
+   font-size:30rpx; /* 对勾大小 30rpx */
+   color:rgb(245, 230, 17); /* 对勾颜色 白色 */
+   background: transparent;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+   
+}
+.button{
+    height: 80rpx;
+    line-height: 80rpx;
+    background:#c2c212;
+    color:#fff;
+    border-radius: 50rpx;
+    font-size: 30rpx;
+    margin: 50rpx 30rpx;
+}
+.button::after{
+    border:none; 
+}
+.xieyi{
+    margin: 20rpx;
+    font-size: 28rpx;
+    color: #aaa;
+}

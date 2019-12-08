@@ -1,0 +1,12 @@
+<view class="wrap">
+  <view class="border"></view>
+  <view></view>
+  <view data-id='{{item.record_id}}' data-summary='{{item.summary}}' class='item' wx:for-items="{{history_list}}" wx:key="name" bindtap="gotoItem">
+    <view class="summary">
+      {{item.summary}}
+    </view>
+    <view class="update_time">
+      {{item.update_time}}
+    </view>
+  </view>
+</view>

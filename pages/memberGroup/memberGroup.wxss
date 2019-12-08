@@ -1,0 +1,152 @@
+page{
+  background: #f5f5f5;
+  min-height: 100%;
+  padding-top: 50rpx;
+  box-sizing: border-box;
+}
+.bg{
+  background: #f5f5f5;
+}
+.content_bg{
+  margin: 0rpx auto;
+  border: 2rpx solid #e5e5e5;
+  width: 90%;
+  /* padding: 20rpx 0; */
+  background: #fff;
+  border-radius: 10rpx;
+}
+
+.member{
+  margin-bottom: 4rpx;
+}
+.member_list{
+  padding: 10rpx;
+
+}
+.member_item{
+  margin: 0 30rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 2rpx solid #e5e5e5;
+  
+}
+.member_item:nth-last-of-type(1){
+  border-bottom: 2rpx solid transparent;
+}
+.nickname_phone{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.nickname{
+  font-size: 30rpx;
+  color: #5a5a5a;
+  padding-left:20rpx; 
+}
+.phone{
+  font-size: 26rpx;
+  color: #323232;
+  
+}
+
+.no_content{
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+ 
+}
+
+.bottom_button{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 140rpx;
+  background: #f5f5f5;
+  
+  box-sizing: border-box;
+}
+.del_member, .add_member{
+  background: #facc3e;
+  color: #ffffff;
+  padding: 28rpx 80rpx 30rpx;
+  border-radius: 80rpx;
+  font-size: 32rpx;
+  margin-bottom: 80rpx;
+}
+.del_member{
+  background:#adc6e5; 
+}
+/* 弹出层 */
+.popup_bg{
+  background: rgba(0,0,0,.6);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup{
+  background: #ffffff;
+  width: 70%;
+  padding: 60rpx 50rpx 40rpx;
+  border-radius: 10rpx;
+}
+.sousuo{
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2rpx solid #facc3e;
+  border-radius: 50rpx;
+  font-size: 32rpx;
+}
+.sousuo input{
+  padding-left: 20rpx;
+  width: 320rpx;
+  margin-top: 4rpx;
+}
+.sousuo view{
+  border: 2rpx solid #facc3e;
+  background: #facc3e;
+  color: #ffffff;
+  padding: 1rpx 30rpx 0;
+  box-sizing: border-box;
+  border-radius: 0 50rpx 50rpx 0;
+  height: 80rpx;
+  line-height: 76rpx;
+  transform: translateX(2rpx);
+}
+.show_add_info{
+  margin: 40rpx 0;
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+  color: #999999;
+}
+.bottom_add_true{
+  display: flex;
+  justify-content: space-between;
+}
+.bottom_add_true view{
+  
+  text-align: center;
+  background:#facc3e;
+  margin: 10rpx 0;
+  padding: 20rpx 80rpx;
+  color: #ffffff;
+  border-radius: 50rpx;
+  font-size: 32rpx;
+}

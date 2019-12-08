@@ -1,0 +1,44 @@
+<!--pages/subject/subject.wxml-->
+<view class="border"></view>
+<view class='bg'>
+  <view class='top'>
+    <view class='top_left'>
+      <image class='top_img'  bindtap="powerDrawer" data-statu="open" src="../../images/gengduo.png" style='width:50rpx;height:50rpx;' mode="scaleToFill"></image>
+      <text style='color:#515151'>{{page.number}}/{{total_size}}</text>
+    </view>
+    <view hidden='{{time_show}}'>{{time_m}}分{{time_s}}秒</view>
+  </view>
+  <view class='content'>
+    <view data-id='{{question_id}}' style='border-bottom: 2rpx solid #ddd;line-height:70rpx;font-size:34rpx'>单选题：{{question}}       
+    </view>
+    <radio-group class="radio-group" bindchange="radioChange">
+      <label class="radio_label" style='display:flex;line-height:90rpx;' class='line_botttom' wx:for-items="{{xuanxiang}}" wx:key='index'>
+          <text style='display:inline-block;width:90%;'>{{item.content}}</text>
+          <radio class="radio" style='float:right;' value='{{item.option_id}}' checked="{{option_id==item.option_id?true:checked}}">
+          </radio>
+      </label>
+      
+    </radio-group>
+    <view class='next_wrap'>
+      <view style='display:{{!isFirst ? "none" : "flex"}};color:#8a8a8a'><image src='{{img_src[1]}}' style='width:50rpx;height:50rpx;transform: rotate(180deg)' mode="scaleToFill"></image>上一题</view>
+      <view style='display:{{isFirst ? "none" : "flex"}}' bindtap='prev_page'><image src='{{img_src[0]}}' style='width:50rpx;height:50rpx;transform: rotate(180deg)' mode="scaleToFill"></image>上一题</view>
+      <view style='display:{{isLast ? "none" : "flex"}}' bindtap='next_page'>下一题<image src='{{img_src[0]}}' style='width:50rpx;height:50rpx;' mode="scaleToFill"></image></view>
+      <view style='display:{{!isLast ? "none" : "flex"}};color:#8a8a8a'>下一题<image src='{{img_src[1]}}' style='width:50rpx;height:50rpx;' mode="scaleToFill"></image></view>
+    </view>
+  </view>
+  <button class='button' bindtap='commit_over'>结 束</button>
+</view>
+
+<view class='mask' bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}">  </view>
+<view class='Drawer' animation="{{animationData}}" wx:if="{{showModalStatus}}">
+  
+  <scroll-view scroll-y="true" style='height: 100%;'>
+    <view class='tihao_title'>{{title}}</view>
+    <view class='tihao_wrap'>
+      <view bindtap='goto_question' class='{{item.isChecked?"tihao_checked":"tihao_item"}}'  wx:for-items="{{tihao_index}}" wx:key='index' data-id='{{item.num}}' data-statu="close">
+        {{item.num}}
+      </view>
+    </view>
+  </scroll-view>
+  
+</view>

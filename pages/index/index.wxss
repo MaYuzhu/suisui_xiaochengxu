@@ -1,0 +1,152 @@
+/**index.wxss**/
+page{
+  width: 100%;
+  height: 100%;
+  background:#f5f5f5;
+}
+.bg{
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  padding: 0;
+  background:#f5f5f5;
+  padding-top: 220rpx;
+  box-sizing: border-box;
+}
+.bg_image{
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 66;
+}
+.bg_img_view{
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.bg_image{
+  display: block;
+  width: 100%;
+}
+.content{
+  position: absolute;
+  z-index: 50;
+}
+
+.scroll-x {
+  display: flex;
+  flex-direction: row; 
+}
+.scroll-y {
+  display: flex;
+  flex-direction: column; 
+  margin-top: 30rpx;
+  background: #f5f5f5;
+}
+
+.scroll-y>view:nth-child(odd){
+  background: #deefef;
+  box-shadow: 0px 8rpx 10rpx 0px #deefef;
+  border-radius: 20rpx;
+}
+.scroll-y>view:nth-child(even){
+  background: #dfe9f1;
+  box-shadow: 0px 8rpx 10rpx 0px #dfe9f1;
+  border-radius: 20rpx;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.item_content{
+  display: flex;
+  justify-content: center;
+  /* padding: 0 40rpx; */
+  margin: 15rpx 40rpx;
+}
+.item{
+  position: relative;
+  width: 100%;
+  height: 160rpx;
+  /* background: linear-gradient(to bottom right, #ead994,30%, #fffbfb); */
+  /* margin-top: 30rpx; */
+  border-radius: 10rpx;
+  /* box-shadow: 2px 2px 8px 0px #999 */
+}
+.item_child1{
+  text-align: center;
+  color:#333;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item_child2{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  color: #c2c212;
+  bottom:30rpx;
+  right: 20rpx;
+  font-size: 30rpx;
+}
+.green
+{
+  display: flex;
+  align-items: center;
+  width: 400rpx;
+  height: 100rpx;
+  background: green;
+}
+.red
+{
+  display: flex;
+  align-items: center;
+  width: 400rpx;
+  height: 100rpx;
+  background: red;
+}
+.yellow
+{
+  display: flex;
+  align-items: center;
+  width: 400rpx;
+  height: 400rpx;
+  background: yellow;
+}
+/* 授权 */
+.header {
+    margin: 90rpx 0 90rpx 50rpx;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    width: 650rpx;
+    height: 300rpx;
+    line-height: 450rpx;
+}
+ 
+.header image {
+    width: 200rpx;
+    height: 200rpx;
+}
+ 
+.content_shou {
+    margin-left: 50rpx;
+    margin-bottom: 90rpx;
+}
+ 
+.content_shou text {
+    display: block;
+    color: #9d9d9d;
+    margin-top: 40rpx;
+}
+ 
+.bottom {
+    border-radius: 80rpx;
+    margin: 70rpx 50rpx ;
+    font-size: 35rpx;
+}

@@ -1,0 +1,35 @@
+
+<view class="border"></view>
+<view style="padding-top: 20rpx;">
+    <view wx:if='{{havePastList}}'>
+      
+        <view class="scroll">
+          <view class='item_content' wx:for-items="{{pastList}}" wx:key="name">
+            <view class="item" data-title='{{item.scale.title}}' bindtap="gotoPagePast" id="{{item.record_id}}">
+              <view class='item_child1'>{{item.scale.title}}</view>
+              <view class='item_child2'>
+                <view>{{item.create_time}}</view>
+                <!-- <view class='item_child2_2'>
+                  <view>进入量表</view>
+                  <image src="../../images/youhui.png" style='width:30rpx;height:30rpx' mode="scaleToFill"></image> 
+                </view> -->
+                
+              </view>
+            </view>
+            
+          </view>
+        </view>
+      
+      <view style='margin-top:34rpx;' hidden="{{is_all}}">
+        <view style='width:80%;height: 1rpx;background-color:#ccc;margin:0 auto;'></view>
+        <view style='width:130rpx;text-align:center;font-size:20rpx;color:#666;background:#f7f7f9;margin:0 auto; transform: translateY(-56%)'> 到达底线了~</view>
+        
+      </view>
+    </view>
+      
+    <view wx:else class='no_content'>
+      <image src='../../images/yemiankong.png' style='width:100rpx;height:100rpx;margin:0 auto;display:block;' mode="scaleToFill"></image>
+      <view style='text-align: center;'>空空如也</view>
+      <view style='text-align: center;font-size:26rpx;color:#a0a0a0'>暂时没有相关数据</view>
+    </view>
+  </view>

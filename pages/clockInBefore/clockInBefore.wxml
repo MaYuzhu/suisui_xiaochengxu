@@ -1,0 +1,35 @@
+<image src="../../images/clock_top.jpg" class="bg_image" mode="widthFix"></image>
+
+<view class="container bg">
+  <view class='bg_img_view'>
+    <!-- <image src="../../images/bg.png" class="bg_image" mode="scaleToFill"></image> -->
+  </view>
+  
+  
+    
+  <view class='wrap'>
+    
+    <view class='item_content'>
+      <view class="item" bindtap="gotoPage" id='1'>
+        <view class='item_child1'>
+          <image src="../../images/clock.png"></image>
+        </view>
+      </view>
+      <view class="item" bindtap="gotoPage" id='2'>
+        <view class='item_child1'>
+          <image src="../../images/clock_h.png"></image>
+        </view>
+      </view>
+      <view class="item" bindtap="gotoPage" id='3'>
+        <view class='item_child1'>
+          <image src="../../images/clock_fen.png"></image>
+        </view>
+      </view>
+      
+    </view>
+  </view>
+    
+  
+  
+  
+</view>

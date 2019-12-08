@@ -1,0 +1,22 @@
+{
+  "name": "suisui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaYuzhu/xinyi_xiaochengxu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaYuzhu/xinyi_xiaochengxu/issues"
+  },
+  "homepage": "https://github.com/MaYuzhu/xinyi_xiaochengxu#readme",
+  "dependencies": {
+    "@antv/f2-canvas": "^1.0.5"
+  }
+}

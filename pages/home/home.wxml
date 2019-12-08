@@ -1,0 +1,5 @@
+<view>
+  <view class="top">
+    <image src="../../images/hometop.jpg" class="bg_image" mode="widthFix"></image>
+  </view>
+</view>

@@ -1,0 +1,32 @@
+<view class="border"></view>
+<view>
+    <view wx:if="{{canIUse}}" >
+        <view class='header'>
+            穗岁教育
+            <!-- <image src='/images/wx_login.png'></image> -->
+        </view>
+ 
+        <view class='content_shou'>
+            <view>申请获取以下权限</view>
+            <text>获得你的公开信息(昵称，头像等)</text>
+        </view>
+
+        <view class='xieyi'>
+          <checkbox-group bindchange="checkboxChange">
+            <label>
+                <checkbox value="1" style='transform: scale(0.7,0.7);' checked='true'></checkbox>
+                <text>我已阅读并同意</text>   
+            </label>
+            <text style='color:#6495ED' bindtap="gotoXieyi">《用户协议》</text>
+          </checkbox-group>
+        </view>
+ 
+        <button hidden="{{tongyixieyi}}" style="background: #facc3e;" class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+            授权登录
+        </button>
+        <button hidden="{{!tongyixieyi}}" style="background: #ccc;" class='bottom hui' type='primary' open-type="getUserInfo" lang="zh_CN">
+            授权登录
+        </button>
+    </view>
+    <view wx:else>请升级微信版本</view>
+</view>

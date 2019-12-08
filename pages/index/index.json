@@ -1,0 +1,9 @@
+{
+  "usingComponents": {},
+  
+  "navigationBarTitleText": "",
+  "navigationBarBackgroundColor": "#eefff4",
+  "navigationBarTextStyle": "black",
+  "disableScroll": false,
+  "navigationStyle": "custom"
+}

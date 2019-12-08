@@ -1,0 +1,4 @@
+/* pages/kefu/kefu.wxss */
+.bg_image{
+  width: 100%;
+}

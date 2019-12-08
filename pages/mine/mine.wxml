@@ -1,0 +1,92 @@
+<!--pages/mine/mine.wxml-->
+<image src="../../images/yellow_top.jpg" class="bg_image" mode="widthFix" style="width:100%;"></image>
+<view class='bg'>
+  
+  <view class='top'>
+    <image hidden='{{isAvatar}}' src="../../images/touxiang.png" style='width:100rpx;height:100rpx;' mode="scaleToFill"></image>
+    <image hidden='{{!isAvatar}}' src="{{avatar}}" style='width:100rpx;height:100rpx;border-radius:65rpx;margin-left:30rpx;' mode="scaleToFill"></image>
+    <view style='font-size:30rpx;color:#666;margin-left:20rpx;' bindtap="warrant">{{uesrname}}</view>
+  </view>
+  <view class='icon_3'>
+    <view class='item' bindtap="gotoIndex">
+      <view>
+        <view style='width:100rpx;height:100rpx;margin:0 auto'>
+          <image src="../../images/bianji3.png" style='width:100rpx;height:78rpx;' mode="scaleToFill"></image>
+        </view>
+        
+        <!-- <text class='num'>3</text> -->
+      </view>
+      <view class='icon_text'>参与评估</view>
+    </view>
+    <view class='item' bindtap="gotoGaugeHistory">
+      <view>
+        <view style='width:100rpx;height:100rpx;margin:0 auto'>
+          <image src="../../images/wenjian.png" style='width:110rpx;height:78rpx;' mode="scaleToFill"></image>
+        </view> 
+        
+        <!-- <text class='num'>33</text> -->
+      </view>
+      <view class='icon_text'>评估历史</view>
+    </view>
+    <view class='item'>
+      <view>
+        <view style='width:100rpx;height:100rpx;margin:0 auto'>
+          <image src="../../images/naozhong.png" style='width:100rpx;height:78rpx;' mode="scaleToFill"></image>
+        </view>
+        <text class='num' style="display:{{available==0?'none':'block'}}">{{available}}</text>
+      </view>
+      <view class='icon_text'>咨询课数</view>
+    </view>
+  </view>
+  <view class='list'>
+    <view bindtap="gotoUserInfo">
+      <view>个人资料</view>
+      <view>
+        <image src="../../images/you_cd.png" class="youjiantou" mode="scaleToFill"></image>
+      </view>
+    </view>
+    <!-- <view bindtap="gotoClockIn">
+      <view>每日打卡</view>
+      <view>
+        <image src="../../images/youhui.png" style='width:70rpx;height:70rpx;' mode="scaleToFill"></image>
+      </view>
+    </view> -->
+    <view bindtap="gotoGroup">  <!-- bindtap="gotoGroup" -->
+      <view>我的分组</view>
+      <view>
+        <image src="../../images/you_cd.png" class="youjiantou" mode="scaleToFill"></image>
+      </view>
+    </view>
+    <view bindtap="gotoGaugeHistory">
+      <view>评估历史</view>
+      <view>
+        <image src="../../images/you_cd.png" class="youjiantou" mode="scaleToFill"></image>
+      </view>
+    </view>
+    <view>
+      <view>预约记录</view>
+      <view>
+        <image src="../../images/you_cd.png" class="youjiantou" mode="scaleToFill"></image>
+      </view>
+    </view>
+    <view>
+      <view>联系客服</view>
+      <view>
+        <image src="../../images/you_cd.png" class="youjiantou" mode="scaleToFill"></image>
+      </view>
+    </view>
+    <view bindtap="gotoXieyi">
+      <view>用户协议</view>
+      <view>
+        <image src="../../images/you_cd.png" class="youjiantou" mode="scaleToFill"></image>
+      </view>
+    </view>
+    <view bindtap="gotoInstructions">
+      <view>使用说明</view>
+      <view>
+        <image src="../../images/you_cd.png" class="youjiantou" mode="scaleToFill"></image>
+      </view>
+    </view>
+  </view>
+  <!-- <view style="height:30rpx;background:#f0f0f0;transform: translateY(-240rpx)"></view> -->
+</view>

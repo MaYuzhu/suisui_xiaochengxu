@@ -1,0 +1,78 @@
+{
+    "pages": [
+
+        "pages/home/home",
+        "pages/clockInBefore/clockInBefore",
+        "pages/index/index",
+        "pages/kefu/kefu",
+        "pages/mine/mine",
+
+        "pages/clockIn/clockIn",
+        "pages/clockInHistory/clockInHistory",
+        "pages/clockInItemDay/clockInItemDay",
+        "pages/clockInMonth/clockInMonth",
+
+        "pages/gaugeHistory/gaugeHistory",
+        "pages/subjectbefore/subjectbefore",
+        "pages/subject/subject",
+        "pages/pastItem/pastItem",
+        "pages/objectinfo/objectinfo",
+        "pages/gaugelist/gaugelist",
+
+        "pages/xieyi/xieyi",
+        "pages/memberGroup/memberGroup",
+        "pages/getUser/getUser",
+        "pages/userinfo/userinfo",
+        "pages/instructions/instructions",
+
+        "pages/mime/mine",
+        "pages/logs/logs",
+        "pages/indexBefore/indexBefore"
+        
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black",
+        
+        "onReachBottomDistance": 50
+    },
+    "tabBar": {
+        "color": "#6f6f6f",
+        "selectedColor": "#facc3e",
+        "list": [
+            {
+              "pagePath": "pages/home/home",
+              "iconPath": "images/home1.png",
+              "selectedIconPath": "images/home.png",
+              "text": "首页"
+            },
+            {
+              "pagePath": "pages/clockInBefore/clockInBefore",
+              "iconPath": "images/daka.png",
+              "selectedIconPath": "images/daka1.png",
+              "text": "打卡"
+            },
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "images/ping1.png",
+                "selectedIconPath": "images/ping.png",
+                "text": "评估"
+            },
+            {
+              "pagePath": "pages/kefu/kefu",
+              "iconPath": "images/zi1.png",
+              "selectedIconPath": "images/zi.png",
+              "text": "客服"
+            },
+            {
+                "pagePath": "pages/mine/mine",
+                "iconPath": "images/my1.png",
+                "selectedIconPath": "images/my.png",
+                "text": "我的"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
+}

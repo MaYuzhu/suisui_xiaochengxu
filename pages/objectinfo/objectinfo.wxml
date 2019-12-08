@@ -1,0 +1,117 @@
+<!--pages/objectinfo/objectinfo.wxml-->
+<view class='page'>
+  <view>
+    <view style='width:60rpx;height:60rpx;background:#fbfcdc;display: flex;justify-content: center;align-items: center;position:absolute;z-index:50;'>
+        <image  src="../../images/laba.png" style='width:30rpx;height:30rpx;' mode="scaleToFill"></image>
+    </view>
+    <scroll-view class="container">
+        <view class="scrolltxt">
+            <view class="marquee_box">
+            <view class="marquee_text" style="transform: translateX(-{{marqueeDistance}}px)">
+                <text >{{text}}</text>
+                <text style="margin-right:{{marquee_margin}}px;"></text>
+                <text style="margin-right:{{marquee_margin}}px;">{{text}}</text>        
+            </view>
+            </view>
+
+        </view>
+    </scroll-view>
+  </view>
+  <scroll-view scroll-y="true" style="height: 100%;">
+    <view style='margin-bottom:80rpx;'>
+        <view class='title_1'>{{title}}</view>
+        <view class='content1'>
+            <view style='color:#6495ED;'>1. 基础内容</view>
+            <view style='text-indent: 1em; color:#666;font-size:28rpx;'>量表名称</view>
+            <view style='text-indent: 2em; color:#aaa;font-size:24rpx;'>{{title}}</view>
+            <view style='text-indent: 1em; color:#666;font-size:28rpx;'>测量时长</view>
+            <view style='text-indent: 2em; color:#aaa;font-size:24rpx;'>{{time}}分钟</view>
+        </view>
+        <view class='content2'>
+            <view style='color:#6495ED;'>2. 参与信息</view>
+            <view class='info_input'>
+                <input placeholder='您的姓名'></input>
+            </view>
+            <view  class='info_radio'>
+                <view style=' border-bottom: 2rpx solid #ddd;height:70rpx;line-height: 70rpx;'>您的性别</view>
+                <radio-group class="radio-group" bindchange="radioChange">
+                    <label style='display:block;height:70rpx;' class='line_botttom'>
+                        <text>男</text>
+                        <radio class="radio" style='float:right;' >
+                        </radio>
+                    </label>
+                    <label style='display:block;border:none;height:70rpx;' class='line_botttom'>
+                        <text>女</text>
+                        <radio class="radio" style='float:right;' >
+                        </radio>
+                    </label>
+                </radio-group>
+            </view>
+            <view class='info_input'>
+                <input placeholder='孩子姓名'></input>
+            </view>
+            <view  class='info_radio'>
+                <view style=' border-bottom: 2rpx solid #ddd;height:70rpx;line-height: 70rpx;'>孩子性别</view>
+                <radio-group class="radio-group" bindchange="radioChange">
+                    <label style='display:block;height:70rpx;' class='line_botttom'>
+                        <text>男</text>
+                        <radio class="radio" style='float:right;' >
+                        </radio>
+                    </label>
+                    <label style='display:block;border:none;height:70rpx;' class='line_botttom'>
+                        <text>女</text>
+                        <radio class="radio" style='float:right;' >
+                        </radio>
+                    </label>
+                </radio-group>
+            </view>
+            <view  class='info_radio'>
+                <view style=' border-bottom: 2rpx solid #ddd;height:70rpx;line-height: 70rpx;'>家中是否有二胎情况</view>
+                <radio-group class="radio-group" bindchange="radioChange">
+                    <label style='display:block;height:70rpx;' class='line_botttom'>
+                        <text>是</text>
+                        <radio class="radio" style='float:right;' >
+                        </radio>
+                    </label>
+                    <label style='display:block;border:none;height:70rpx;' class='line_botttom'>
+                        <text>否</text>
+                        <radio class="radio" style='float:right;' >
+                        </radio>
+                    </label>
+                </radio-group>
+            </view>
+            <view  class='info_radio'>
+                <view style=' border-bottom: 2rpx solid #ddd;height:70rpx;line-height: 70rpx;'>是否与老人一起生活</view>
+                <radio-group class="radio-group" bindchange="radioChange">
+                    <label style='display:block;height:70rpx;' class='line_botttom'>
+                        <text>是</text>
+                        <radio class="radio" style='float:right;' >
+                        </radio>
+                    </label>
+                    <label style='display:block;border:none;height:70rpx;' class='line_botttom'>
+                        <text>否</text>
+                        <radio class="radio" style='float:right;' >
+                        </radio>
+                    </label>
+                </radio-group>
+            </view>
+            
+            
+            
+        </view>
+       <button class='button' bindtap='gotoPageSubject'>确定</button>
+       <view class='xieyi'>
+        <label>
+            <checkbox style='transform: scale(0.6,0.6);' checked='true'></checkbox>
+            <text>我已阅读并同意</text>   
+        </label>
+            <text style='color:#6495ED' bindtap="gotoXieyi">《用户协议》</text>
+       </view>
+       <view  style='height:80rpx; opacity:0'></view>
+            
+        
+    </view>
+    
+  </scroll-view>
+  
+</view>
