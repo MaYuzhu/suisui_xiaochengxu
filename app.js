@@ -36,8 +36,8 @@ App({
   },
   globalData: {
     userInfo: null,
-  
-    url:"https://api.anlanxinyi.com/",
+    url:"https://api.anlanxinyi.com/web/",
+    //url:"https://api.anlanxinyi.com/",
     statusBarHeight: wx.getSystemInfoSync()['statusBarHeight']
   },
   noUser: function (e) {

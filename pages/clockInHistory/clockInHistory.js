@@ -53,7 +53,7 @@ Page({
         "Content-Type": "application/json;charset=UTF-8"
       },
       success: (res) => {
-        console.log(res)
+        //console.log(res)
         // if (res.data.results.length < 1) {
         //   wx.showToast({
         //     title: '暂无数据',

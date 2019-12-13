@@ -1,2 +1,11 @@
 <!--pages/kefu/kefu.wxml-->
 <image src="../../images/clock_top.jpg" class="bg_image" mode="widthFix"></image>
+<view class="bg">
+  <view class="center">
+    <view class="img">
+      <image src="../../images/weiwan.png" mode="widthFix"></image>
+    </view>
+    <view class="text">客服版块正在建设中，敬请期待</view>
+  </view>
+  
+</view>

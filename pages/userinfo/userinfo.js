@@ -39,7 +39,7 @@ Page({
           email: res.data.email,
           isAvatar: true
         })
-        that.setUser()
+        //that.setUser()
       }
     })
     

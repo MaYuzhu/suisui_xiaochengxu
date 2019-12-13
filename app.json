@@ -1,6 +1,8 @@
 {
     "pages": [
 
+        "pages/indexBefore/indexBefore",
+
         "pages/home/home",
         "pages/clockInBefore/clockInBefore",
         "pages/index/index",
@@ -26,8 +28,8 @@
         "pages/instructions/instructions",
 
         "pages/mime/mine",
-        "pages/logs/logs",
-        "pages/indexBefore/indexBefore"
+        "pages/logs/logs"
+        
         
     ],
     "window": {

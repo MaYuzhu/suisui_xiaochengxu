@@ -2,8 +2,9 @@
 <view>
     <view wx:if="{{canIUse}}" >
         <view class='header'>
-            穗岁教育
-            <!-- <image src='/images/wx_login.png'></image> -->
+            <view class="logo"><image src='/images/logo.jpg' mode='scaleToFill'></image></view>
+            
+            <text >穗岁成长</text>
         </view>
  
         <view class='content_shou'>

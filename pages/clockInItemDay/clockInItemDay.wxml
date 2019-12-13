@@ -9,7 +9,7 @@
       </view>
     </view>
   </view>
-  <view  class="title">文字描述</view>
+  <view  class="title">我的总结</view>
   <view class="text">
     <text>{{text}}</text>
   </view>

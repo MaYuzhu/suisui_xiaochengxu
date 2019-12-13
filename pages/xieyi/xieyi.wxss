@@ -22,3 +22,18 @@ page{
   height: 0;
   color: transparent;
 }
+.title1{
+  text-align:center;
+  font-size:36rpx;
+  font-weight: bold;
+  line-height: 2rem;
+}
+.title{
+  font-size: 34rpx;
+  line-height: 2rem;
+}
+.p_content{
+  font-size: 30rpx;
+  line-height: 1.2rem;
+  /* text-indent: 2em; */
+}

@@ -439,6 +439,23 @@ Page({
   onUnload: function () {
     let that = this
     clearInterval(that.data.timer)
+    wx.request({
+      url: url + 'record/save?session_id=' + wx.getStorageSync('session_id'),
+      method: "POST",
+      data: {
+        scale_id: that.data.scale_id,
+        role_id: that.data.role_id,
+        record_id: that.data.record_id,
+        complete: true
+      },
+      header: {
+        "Content-Type": "application/json;charset=UTF-8"
+      },
+      success: (res) => {
+        //console.log(res)
+        
+      }
+    })
   },
 
   /**

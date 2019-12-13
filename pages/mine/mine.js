@@ -139,6 +139,13 @@ Page({
     })
   },
 
+  //客服
+  gotoKefu: function(){
+    wx.switchTab({
+      url: '/pages/kefu/kefu',
+    })
+  },
+
   gotoXieyi: function() {
     wx.navigateTo({
       url: "/pages/xieyi/xieyi",
@@ -170,6 +177,9 @@ Page({
       success: (res) => {
         //console.log(res)
         if (res.statusCode == 401) {
+          that.setData({
+            available: 0
+          })
           return false
         } else {
           that.setData({

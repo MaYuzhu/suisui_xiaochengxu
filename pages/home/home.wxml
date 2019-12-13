@@ -1,5 +1,37 @@
-<view>
+<!-- <view>
   <view class="top">
-    <image src="../../images/hometop.jpg" class="bg_image" mode="widthFix"></image>
+    <image src="../../images/home_top1.jpg" class="bg_image" mode="widthFix"></image>
+  </view>
+</view> -->
+<view class="border"></view>
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" style="height:{{imgheights[current]}}rpx;"
+ indicator-active-color="{{activeColor}}" circular='{{circular}}' bindchange="bindchange">
+ <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+ <swiper-item>
+  <navigator url="{{item.link}}" hover-class="navigator-hover">
+    <image src="{{item.url}}" data-id='{{index}}' class="slide-image" mode="widthFix" bindload="imageLoad"/>
+  </navigator>
+ </swiper-item>
+ </block>
+</swiper>
+
+<view class="content1">
+  <view data-url='/pages/clockIn/clockIn' bindtap="gotoPage">
+    <image src="../../images/home_daka.png" style="width:100%;height:100%;"/></view>
+  <view>
+    <view data-url='/pages/index/index' bindtap="gotoPageTab">
+      <image src="../../images/home_pingce.png" mode="widthFix"/>
+    </view>
+    <view data-url='/pages/kefu/kefu' bindtap="gotoPageTab">
+      <image src="../../images/home_kefu.png" mode="widthFix"/>
+    </view>
+  </view>
+</view>
+<view class="content2">
+  <view data-url='/pages/clockInHistory/clockInHistory' bindtap="gotoPage">
+    <image src="../../images/home_wodedaka.png" mode="widthFix"/>
+  </view>
+  <view>
+    <image src="../../images/home_yuebao.png" mode="widthFix"/>
   </view>
 </view>

@@ -4,7 +4,7 @@
   
   <view class='top'>
     <image hidden='{{isAvatar}}' src="../../images/touxiang.png" style='width:100rpx;height:100rpx;' mode="scaleToFill"></image>
-    <image hidden='{{!isAvatar}}' src="{{avatar}}" style='width:100rpx;height:100rpx;border-radius:65rpx;margin-left:30rpx;' mode="scaleToFill"></image>
+    <image hidden='{{!isAvatar}}' wx:if='{{avatar}}' src="{{avatar}}" style='width:100rpx;height:100rpx;border-radius:65rpx;margin-left:30rpx;' mode="scaleToFill"></image>
     <view style='font-size:30rpx;color:#666;margin-left:20rpx;' bindtap="warrant">{{uesrname}}</view>
   </view>
   <view class='icon_3'>
@@ -52,7 +52,7 @@
       </view>
     </view> -->
     <view bindtap="gotoGroup">  <!-- bindtap="gotoGroup" -->
-      <view>我的分组</view>
+      <view>家庭成员</view>
       <view>
         <image src="../../images/you_cd.png" class="youjiantou" mode="scaleToFill"></image>
       </view>
@@ -63,13 +63,13 @@
         <image src="../../images/you_cd.png" class="youjiantou" mode="scaleToFill"></image>
       </view>
     </view>
-    <view>
+    <view bindtap="gotoKefu">
       <view>预约记录</view>
       <view>
         <image src="../../images/you_cd.png" class="youjiantou" mode="scaleToFill"></image>
       </view>
     </view>
-    <view>
+    <view bindtap="gotoKefu">
       <view>联系客服</view>
       <view>
         <image src="../../images/you_cd.png" class="youjiantou" mode="scaleToFill"></image>

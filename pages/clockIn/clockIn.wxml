@@ -65,12 +65,12 @@
   <view class='text-title'>
     <view style='display: flex;align-items: center'>
       <!-- <image src="../../images/bianji3.png" style='width:50rpx;height:50rpx;' class="bg_image" mode="scaleToFill"></image> -->
-      <text style='font-size:30rpx;color:#666;'>文字描述</text>
+      <text style='font-size:30rpx;color:#666;'>今日总结</text>
     </view>
     
   </view>
   <textarea class="detailText" maxlength="{{max}}" bindinput="inputs"
-    placeholder="输入您的备注" value="{{summary}}" bindblur="charChange">
+    placeholder="请输入内容" value="{{summary}}" bindblur="charChange">
     <text class="currentWordNumber">{{currentWordNumber|0}}/{{max}}</text>
     
   </textarea>

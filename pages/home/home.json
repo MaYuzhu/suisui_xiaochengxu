@@ -1,8 +1,7 @@
 {
   "usingComponents": {},
-  "navigationBarTitleText": "",
-  "navigationBarBackgroundColor": "#fef8e0",
-  "navigationBarTextStyle": "black",
-  "navigationStyle": "custom"
+  "navigationBarTitleText": "穗岁成长",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black"
 
 }
