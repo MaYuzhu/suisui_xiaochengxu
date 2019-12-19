@@ -7,14 +7,14 @@
     <image hidden='{{!isAvatar}}' wx:if='{{avatar}}' src="{{avatar}}" style='width:100rpx;height:100rpx;border-radius:65rpx;margin-left:30rpx;' mode="scaleToFill"></image>
     <view style='font-size:30rpx;color:#666;margin-left:20rpx;' bindtap="warrant">{{uesrname}}</view>
   </view>
-  <view class='icon_3'>
+  <!-- <view class='icon_3'>
     <view class='item' bindtap="gotoIndex">
       <view>
         <view style='width:100rpx;height:100rpx;margin:0 auto'>
           <image src="../../images/bianji3.png" style='width:100rpx;height:78rpx;' mode="scaleToFill"></image>
         </view>
         
-        <!-- <text class='num'>3</text> -->
+        <text class='num'>3</text>
       </view>
       <view class='icon_text'>参与评估</view>
     </view>
@@ -24,7 +24,7 @@
           <image src="../../images/wenjian.png" style='width:110rpx;height:78rpx;' mode="scaleToFill"></image>
         </view> 
         
-        <!-- <text class='num'>33</text> -->
+        <text class='num'>33</text>
       </view>
       <view class='icon_text'>评估历史</view>
     </view>
@@ -37,7 +37,7 @@
       </view>
       <view class='icon_text'>咨询课数</view>
     </view>
-  </view>
+  </view> -->
   <view class='list'>
     <view bindtap="gotoUserInfo">
       <view>个人资料</view>
@@ -57,7 +57,7 @@
         <image src="../../images/you_cd.png" class="youjiantou" mode="scaleToFill"></image>
       </view>
     </view>
-    <view bindtap="gotoGaugeHistory">
+    <!-- <view bindtap="gotoGaugeHistory">
       <view>评估历史</view>
       <view>
         <image src="../../images/you_cd.png" class="youjiantou" mode="scaleToFill"></image>
@@ -74,7 +74,19 @@
       <view>
         <image src="../../images/you_cd.png" class="youjiantou" mode="scaleToFill"></image>
       </view>
+    </view> -->
+    <view bindtap="">
+      <view>成长时间范围</view>
+      <view>
+        <text>{{timeRange}}</text>
+      </view>
     </view>
+    <view bindtap="">
+      <view>咨询购买情况</view>
+      <view>
+        <text>剩余{{available}}次</text>
+      </view>
+    </view> 
     <view bindtap="gotoXieyi">
       <view>用户协议</view>
       <view>

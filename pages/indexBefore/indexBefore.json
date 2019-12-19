@@ -1,7 +1,7 @@
 {
   "usingComponents": {},
   "navigationBarTitleText": "欢迎进入",
-  "navigationBarBackgroundColor": "#defca8",
+  "navigationBarBackgroundColor": "#ffffff",
   "navigationBarTextStyle": "black",
   "disableScroll": true
 }

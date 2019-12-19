@@ -12,24 +12,63 @@
     <view>昵称</view>
     <view style='color:#999'>{{uesrname}}</view>
   </view>
-  <view class='item'>
+  <view class='item item_b'>
     <view>姓名</view>
     <view class='name_show'>
       <view><input bindblur="blurName" style="text-align: right" value='{{fullname}}' placeholder="请输入姓名"></input></view>
       <image src="../../images/youhui.png" style='width:50rpx;height:50rpx;' mode="scaleToFill"></image>
     </view>
   </view>
-  <view class='item'>
+  <!-- <view class='item'>
     <view>邮箱</view>
     <view class='name_show'>
       <view><input bindblur="blurEmail" style="text-align: right" value='{{email}}' placeholder="请输入邮箱"></input></view>
       <image src="../../images/youhui.png" style='width:50rpx;height:50rpx;' mode="scaleToFill"></image>
     </view>
-  </view>
-  <view class='item'>
+  </view> -->
+  <view class='item item_b'>
     <view>手机号</view>
     <view class='name_show'>
       <view><input style="text-align: right" value='{{phone}}' placeholder="请输入手机号码" maxlength="11" type="tel" bindblur="blurPhone"></input></view>
+      <image src="../../images/youhui.png" style='width:50rpx;height:50rpx;' mode="scaleToFill"></image>
+    </view>
+  </view>
+  <view class='item item_b'>
+    <view>年龄</view>
+    <view class='name_show'>
+      <view><input style="text-align: right" value='{{age}}' placeholder="请输入年龄"  type="number" bindblur="blurAge"></input></view>
+      <image src="../../images/youhui.png" style='width:50rpx;height:50rpx;' mode="scaleToFill"></image>
+    </view>
+  </view>
+  <view class='item item_b'>
+    <view>学历</view>
+    <view class='name_show'>
+      <view><input style="text-align: right" value='{{degree}}' placeholder="请输入学历" type="text" bindblur="blurDegree"></input></view>
+      <image src="../../images/youhui.png" style='width:50rpx;height:50rpx;' mode="scaleToFill"></image>
+    </view>
+  </view>
+  <view class='item item_b'>
+    <view>性别</view>
+    <view class='name_show'>
+      <view>
+        <picker bindchange="bindPickerChange" value="{{sex_value}}" range="{{sex}}">
+          <view class="weui_btn" type="default">{{sex_value}}</view>
+        </picker>
+      </view>
+      <image src="../../images/youhui.png" style='width:50rpx;height:50rpx;' mode="scaleToFill"></image>
+    </view>
+  </view>
+  <view class='item item_b'>
+    <view>职业方向</view>
+    <view class='name_show'>
+      <view><input style="text-align: right" value='{{occupation}}' placeholder="如教师，销售..." maxlength="11" type="tel" bindblur="blurOccupation"></input></view>
+      <image src="../../images/youhui.png" style='width:50rpx;height:50rpx;' mode="scaleToFill"></image>
+    </view>
+  </view>
+  <view class='item'>
+    <view>其他信息</view>
+    <view class='name_show'>
+      <view><input style="text-align: right" value='{{other}}' placeholder="请输入" maxlength="11" type="tel" bindblur="blurOther"></input></view>
       <image src="../../images/youhui.png" style='width:50rpx;height:50rpx;' mode="scaleToFill"></image>
     </view>
   </view>
@@ -37,3 +76,4 @@
   
 </view>
 <view bindtap="logout" class="logout">退 出 登 录</view>
+<view style="height:50rpx"></view>

@@ -14,6 +14,14 @@ Page({
     isAvatar: false,
     phone: '',
     email: '',
+    sex:['男','女'],
+    sex_value:'请选择',
+    sex_num:0,
+    age:'',
+    degree:'',
+    occupation:'',
+    other:''
+
   },
 
   /**
@@ -31,13 +39,27 @@ Page({
       success: (res) => {
         //console.log(res)
         wx.hideToast()
+        let sex_v = ''
+        if (res.data.sex==0){
+          sex_v = '请选择'
+        }else{
+          sex_v = that.data.sex[res.data.sex-1] 
+        }
+
+        
         that.setData({
           uesrname: res.data.nickname,
           avatar: res.data.portrait,
           fullname: res.data.full_name,
           phone: res.data.phone,
           email: res.data.email,
-          isAvatar: true
+          isAvatar: true,
+          sex_value: sex_v,
+          sex_num: res.data.sex,
+          age: res.data.age,
+          degree: res.data.degree == 0 ? '' : res.data.degree,
+          occupation: res.data.occupation,
+          other: res.data.other,
         })
         //that.setUser()
       }
@@ -71,6 +93,39 @@ Page({
     })
     this.setUser()
   },
+  bindPickerChange: function (e) {
+    //console.log('picker发送选择改变，携带值为', e.detail.value);//index为数组点击确定后选择的item索引
+    this.setData({
+      sex_value: this.data.sex[e.detail.value],
+      sex_num: e.detail.value*1 + 1
+    })
+    this.setUser()
+  },
+  blurAge: function (e) {
+    this.setData({
+      age: e.detail.value
+    })
+    this.setUser()
+  },
+  blurDegree: function (e) {
+    this.setData({
+      degree: e.detail.value
+    })
+    this.setUser()
+  },
+  blurOccupation: function (e) {
+    this.setData({
+      occupation: e.detail.value
+    })
+    this.setUser()
+  },
+  blurOther: function (e) {
+    this.setData({
+      other: e.detail.value
+    })
+    this.setUser()
+  },
+  
 
   //设置用户信息
   setUser: function () {
@@ -85,6 +140,12 @@ Page({
         email: that.data.email,
         nickname:that.data.uesrname,
         portrait:that.data.avatar,
+
+        sex: that.data.sex_num,
+        age: that.data.age,
+        degree: that.data.degree,
+        occupation: that.data.occupation,
+        other: that.data.other,
       },
       header: {
         "Content-Type": "application/json;charset=UTF-8"

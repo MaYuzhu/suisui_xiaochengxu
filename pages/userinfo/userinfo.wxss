@@ -18,6 +18,11 @@ page{
   font-size: 30rpx;
   color: #666;
 }
+.item_b>view:nth-child(1):after {
+  content: "*";
+  color: red;
+  margin-left:2px;
+}
 .name_show{
   display: flex;
   align-items: center;
@@ -35,4 +40,7 @@ page{
   box-shadow: 0 0 4rpx 14rpx #cbdef5;
   color: #fff;
   text-align: center;
+}
+.weui_btn{
+  width: 100rpx;
 }

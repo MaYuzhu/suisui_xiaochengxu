@@ -1,6 +1,8 @@
 // pages/mine/mine.js
 const app = getApp()
 const url = app.globalData.url
+
+let util = require('../../utils/util.js')
 Page({
 
   /**
@@ -10,7 +12,8 @@ Page({
     uesrname:'点击授权登录',
     avatar:'',
     isAvatar: false,
-    available:0
+    available:0,
+    timeRange:''
   },
 
   /**
@@ -41,13 +44,16 @@ Page({
           return false
         } else {
           wx.hideToast()
-          
+          let timeS = res.data.create_time.substring(0, 7).replace(/-/, '/')
+          let timdE = util.formatTime(new Date()).substring(0, 7)
+
           that.setData({
             //uesrname: wx.getStorageSync('user'), 
             //avatar: wx.getStorageSync('avatar'),
             uesrname: res.data.nickname,
             avatar: res.data.portrait,
-            isAvatar: true
+            isAvatar: true,
+            timeRange: timeS+'-'+timdE,
           })
         }
         
