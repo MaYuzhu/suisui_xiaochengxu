@@ -18,6 +18,9 @@ page{
   font-size: 30rpx;
   color: #666;
 }
+.item:last-child{
+  border-bottom: 2rpx solid transparent;
+}
 .item_b>view:nth-child(1):after {
   content: "*";
   color: red;
