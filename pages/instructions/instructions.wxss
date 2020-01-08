@@ -15,13 +15,31 @@ page{
   background:#fff;
   border: 2rpx solid #eee;
 }
-.title{
+.shuoming{
   text-align: center;
-  padding: 20rpx;
-  font-size: 36rpx;
-  color: #666
-}
-.text{
-  font-size: 30rpx;
+  margin: 30rpx;
+  background: #fff;
+  border-radius:20rpx; 
+  padding: 30rpx;
+  box-sizing: border-box;
   color: #666;
+  font-size:36rpx;
+}
+.title1{
+  text-align:center;
+  font-size:34rpx;
+  font-weight: bold;
+  line-height: 2rem;
+  color: #666;
+}
+.title{
+  font-size: 32rpx;
+  line-height: 1.2rem;
+  color: #666;
+}
+.p_content{
+  font-size: 32rpx;
+  line-height: 1.2rem;
+  color: #666;
+  /* text-indent: 2em; */
 }

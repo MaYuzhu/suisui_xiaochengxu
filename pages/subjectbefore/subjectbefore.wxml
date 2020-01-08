@@ -19,7 +19,7 @@
 
 <view class='content'>
 
-    <view style='border-bottom: 2rpx solid #ddd;height:70rpx;line-height:70rpx;font-size:34rpx'>请选择与答题人的关系      
+    <view style='border-bottom: 2rpx solid #ddd;height:70rpx;line-height:70rpx;font-size:34rpx'>请选择您的身份      
     </view>
     <radio-group class="radio-group" bindchange="radioChange">
       <label style='display:block;height:70rpx;' class='line_botttom' wx:for-items="{{xuanxiang}}" wx:key='index'>

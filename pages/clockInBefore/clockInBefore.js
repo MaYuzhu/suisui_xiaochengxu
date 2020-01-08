@@ -56,9 +56,9 @@ Page({
               url: "/pages/clockInHistory/clockInHistory",
             })
           } else if (id == 3){
-            // wx.navigateTo({
-            //   url: "/pages/clockInMonth/clockInMonth",
-            // })
+            wx.navigateTo({
+              url: "/pages/clockInMonth/clockInMonth",
+            })
           }
         }
         

@@ -13,4 +13,8 @@
   <view class="text">
     <text>{{text}}</text>
   </view>
+  <view  class="title">打卡回复</view>
+  <view class="text">
+    <text>{{expert_review}}</text>
+  </view>
 </view>

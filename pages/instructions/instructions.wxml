@@ -1,10 +1,66 @@
 <view class="border"></view>
 <view class="wrap">
   <view class="content">
-    <view class='title'>使用说明</view>
-    <view class="text">
-      <text></text>
-    </view>
+    <view class='shuoming'>穗岁小程序使用说明</view>
+    <view class='title'>1.	用户进入小程序后首先需要完成“授权登录”和“个人资料”的填写：</view>
+      <view class="p_content">（1）注册第一步：点击进入“我的”页面，轻点页面最上方“点击授权登录”（如图一和图二）完成登录过程，否则没有办法进行“打卡”和“量表评估”部分的填写。</view>
+      <view>
+        <image mode="widthFix" style='width:100%;margin:0 auto' src='https://api.anlanxinyi.com/static/img/shouce1.png'></image>
+        <view style='text-align: center;margin-bottom:30rpx;'>图一</view>
+  </view>
+  <view>
+        <image mode="widthFix" style='width:100%;margin:0 auto' src='https://api.anlanxinyi.com/static/img/shouce2.jpg'></image>
+        <view style='text-align: center;margin-bottom:30rpx;'>图二</view>
+  </view>
+      <view class="p_content">（2）注册第二步：点击用户名下方“个人资料”（见图三），填写个人资料（见图四）</view>
+  <view>
+        <image mode="widthFix" style='width:100%;margin:0 auto' src='https://api.anlanxinyi.com/static/img/shouce3.png'></image>
+        <view style='text-align: center;margin-bottom:30rpx;'>图三</view>
+  </view>
+  <view>
+        <image mode="widthFix" style='width:100%;margin:0 auto' src='https://api.anlanxinyi.com/static/img/shouce4.jpg'></image>
+        <view style='text-align: center;margin-bottom:30rpx;'>图四</view>
+  </view>
+  <view class='title'>2.“打卡”页面主要功能介绍：</view>
+      <view class="p_content">（1）用户每日打卡：点击“立即打卡”（如图五），如显示还未设置关键词(如图六)，请联系您的咨询师或通过小程序端联系客服。</view>
+      <view>
+        <image mode="widthFix" style='width:100%;margin:0 auto' src='https://api.anlanxinyi.com/static/img/shouce5.png'></image>
+        <view style='text-align: center;margin-bottom:30rpx;'>图五</view>
+  </view>
+  <view>
+        <image mode="widthFix" style='width:100%;margin:0 auto' src='https://api.anlanxinyi.com/static/img/shouce6.jpg'></image>
+        <view style='text-align: center;margin-bottom:30rpx;'>图六</view>
+  </view>
+      <view class="p_content">（2）用户通过“我的打卡”界面可以查看近期打卡数据。</view>
+      <view class="p_content">（3）用户通过“我的打卡”界面可以点击生成打卡“月报及年报”，查看打卡数据图及老师寄语。</view>
+      <view class='title'>3.“评估”页面主要功能介绍：在本区域，您可以根据咨询老师的建议选择相应主题量表进行填写（如图七），如果您还不清楚具体需要填写哪几个量表（如图八），可以咨询主案咨询老师或联系客服。这里我们以“成人行为主题”中的“社交焦虑量表”为例：</view>
+      <view>
+        <image mode="widthFix" style='width:100%;margin:0 auto' src='https://api.anlanxinyi.com/static/img/shouce7.png'></image>
+        <view style='text-align: center;margin-bottom:30rpx;'>图七</view>
+  </view>
+  <view>
+        <image mode="widthFix" style='width:100%;margin:0 auto' src='https://api.anlanxinyi.com/static/img/shouce8.png'></image>
+        <view style='text-align: center;margin-bottom:30rpx;'>图八</view>
+  </view>
+      <view class="p_content">（1）点击“成人行为主题”--“社交焦虑量表”，打开后首先需要选择您在家庭中的角色身份，如：爸爸/妈妈/大宝/二宝，还是家中其他身份（爷爷奶奶等请选择其他）；如为个人身份进行评估，请选择“个人”。（如图九）</view>
+      <view>
+        <image mode="widthFix" style='width:100%;margin:0 auto' src='https://api.anlanxinyi.com/static/img/shouce9.jpg'></image>
+        <view style='text-align: center;margin-bottom:30rpx;'>图九</view>
+  </view>
+      <view class="p_content">（2）身份选择完成后进入到量表评估部分，需要注意的是在量表正式填写之前请认真阅读量表指导语及填写该量表的有关注意事项，在填写过程中需要关注右上角的倒计时，需要在时间范围内完成量表填写，否则将自动提交。（如图十）</view>
+      <view>
+        <image mode="widthFix" style='width:100%;margin:0 auto' src='https://api.anlanxinyi.com/static/img/shouce10.png'></image>
+        <view style='text-align: center;margin-bottom:30rpx;'>图十</view>
+  </view>
+      <view class="p_content">（3）所有题目填写结束后，点击“结束”按钮--“确定提交”（如图十一、十二），至此完成该量表的答题及提交过程，可以联系客服安排量表解析的具体时间。</view>
+      <view>
+        <image mode="widthFix" style='width:100%;margin:0 auto' src='https://api.anlanxinyi.com/static/img/shouce11.jpg'></image>
+        <view style='text-align: center;margin-bottom:30rpx;'>图十一</view>
+  </view><view>
+        <image mode="widthFix" style='width:100%;margin:0 auto' src='https://api.anlanxinyi.com/static/img/shouce12.jpg'></image>
+        <view style='text-align: center;margin-bottom:30rpx;'>图十二</view>
+  </view>
   </view>
 </view>
+
 

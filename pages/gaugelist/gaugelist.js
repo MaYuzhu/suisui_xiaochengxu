@@ -131,9 +131,22 @@ Page({
           let number = event.currentTarget.id  //1或者2得到点击了按钮1或者按钮2 
           let title = event.currentTarget.dataset.title
           let answer_time = event.currentTarget.dataset.answer_time
-          wx.navigateTo({
-            url: "/pages/subjectbefore/subjectbefore?number=" + number + "&title=" + title + "&answer_time=" + answer_time,
+          let promise = event.currentTarget.dataset.promise
+          wx.showModal({
+            title: '指导语',
+            content: promise,
+            showCancel: false,
+            confirmText: "知道了",
+            //confirmColor: '#456fff',
+            success: function(res){
+              if (res.confirm){
+                wx.navigateTo({
+                  url: "/pages/subjectbefore/subjectbefore?number=" + number + "&title=" + title + "&answer_time=" + answer_time,
+                })
+              }
+            }
           })
+          
         }
       }
     })

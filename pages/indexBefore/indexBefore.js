@@ -6,7 +6,8 @@ Page({
     this.bindload();
   },
   bindload() {
-    setTimeout(this.goIndex,3000)
+    setTimeout(this.goIndex,3500)
+    //setTimeout(this.goIndex, 0)
   },
   goIndex() {
     wx.switchTab({

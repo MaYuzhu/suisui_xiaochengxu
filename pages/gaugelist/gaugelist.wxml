@@ -9,7 +9,7 @@
     <scroll-view scroll-y="true" style="height: 100%;">
       <view class="scroll-y" style="min-height: 101%;">
         <view class='item_content' wx:for-items="{{scrolls}}" wx:key="name">
-          <view class="item" bindtap="gotoPage" data-title='{{item.title}}' id="{{item.scale_id}}"  data-answer_time='{{item.answer_time}}'>
+          <view class="item" bindtap="gotoPage" data-title='{{item.title}}' id="{{item.scale_id}}"  data-answer_time='{{item.answer_time}}' data-promise='{{item.promise}}'>
             <view class='item_child1'>{{item.title}}</view>
             <view class='item_child2' data-answer_time='{{item.answer_time}}' data-title='{{item.title}}' id="{{item.scale_id}}">
               <view>测量时长：{{item.answer_time}}分钟</view>
@@ -17,7 +17,6 @@
                 <view>进入量表</view>
                 <image src="../../images/youhui.png" style='width:30rpx;height:30rpx' mode="scaleToFill"></image> 
               </view> -->
-              
             </view>
           </view>
           

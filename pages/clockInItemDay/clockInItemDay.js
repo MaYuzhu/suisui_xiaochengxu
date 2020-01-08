@@ -32,7 +32,8 @@ Page({
         my_level: 7
       },
     ],
-    text:''
+    text:'',
+    expert_review:' '
   },
 
   /**
@@ -54,6 +55,7 @@ Page({
         //console.log(res)
         that.setData({
           text: res.data.summary,
+          expert_review: res.data.expert_review,
           arr_items:res.data.details
         })
       }
